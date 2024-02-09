@@ -1,0 +1,20 @@
+.form-container {
+  width: 100%; /* Adjusted to fill the entire width of the viewport */
+  max-width: 5000px; /* Set a maximum width */
+  margin: 0 auto; /* Center the form container */
+  padding: 50px; /* Adjusted padding for spacing */
+}
+
+@media screen and (max-width: 1000px) {
+  .form-container {
+    width: 90%; /* Adjusted width for smaller screens */
+    padding: 30px; /* Adjusted padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form-container {
+    width: 95%; /* Adjusted width for even smaller screens */
+    padding: 20px; /* Adjusted padding for even smaller screens */
+  }
+}
