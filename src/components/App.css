@@ -1,6 +1,8 @@
+
+
 .form-container {
   width: 100%; /* Adjusted to fill the entire width of the viewport */
-  max-width: 5000px; /* Set a maximum width */
+  max-width: 500px; /* Set a maximum width */
   margin: 0 auto; /* Center the form container */
   padding: 50px; /* Adjusted padding for spacing */
 }
