@@ -1,13 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+
 import Login from './Login';
 import Signup from './Signup';
 import Home from './Home';
 import All_activites from './All_activites';
+
 import Create_Trip from './Create_Trip';
 import About_us from './About_us';
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
+
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -52,17 +55,25 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <>
+<Router>
+<Routes>
+     <Route path="/" element={<Login />} />
+     <Route path="/signup" element={<Signup />} />
+ </Routes>
       <Navbar />
+      <Home />
       <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path='/signup' element={<Signup />} />
-        <Route path='/home' element={<Home />} />
-        <Route path='/all_activites' element={<All_activites />} />
-        <Route path='/create_trip' element={<Create_Trip />} />
-        <Route path='/about_us' element={<About_us />} />
+
+        <Route path="/create_trip" element={<Create_Trip />} />
+        <Route path="/about" element={<About_us />} />
+        <Route path="/all_activites" element={<All_activites />} />
+        
       </Routes>
     </Router>
+
+</>
+
   );
 }
 

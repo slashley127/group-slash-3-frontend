@@ -2,6 +2,7 @@ import "./App.css";
 import { Link, useNavigate } from "react-router-dom";
 import React, {useState} from "react";
 import Home from "./Home"
+import Navbar from "./Navbar";
 
 
 function Login() {
@@ -59,7 +60,7 @@ const [email, setEmail] = useState("");
             </label>
           </div>
           <div className='d-grid'>
-            <button className='btn btn-primary' onClick={handleSubmit}><Link to="/home" className='btn btn-primary'>Sign In</Link> </button>
+            <button className='btn btn-primary' onClick={handleSubmit}><Link to="/navbar" className='btn btn-primary'>Sign In</Link> </button>
             <p className='text-end mt-2'>
               Forgot <a href=""> Password?</a>
               <Link to="/signup" className="ms-2"> Sign Up</Link>

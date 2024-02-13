@@ -2,7 +2,10 @@ import React from 'react'
 
 function Create_Trip() {
   return (
-    <div>Create_Trip</div>
+    <div>
+
+     <h1> kkkkk</h1>
+    </div>
   )
 }
 

@@ -36,33 +36,46 @@ function Navbar() {
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/all_activites' className='nav-links' onClick={closeMobileMenu}>
-              All activites
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/create_trip'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Create Trip
-              </Link>
-            </li>
-
-            <li>
-              <Link
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <li className='nav-item'>
+                    <Link
+                    to='/my_profile'
+                    className='nav-links'
+                    onClick={closeMobileMenu}  >
+                My profile
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                   <Link to='/all_activites' className='nav-links' onClick={closeMobileMenu}>
+                All activites
+                   </Link>
+                </li>
+                <li>
+                <Link
                 to='/about_us'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
-              >
+                >
                 About us
+                </Link>
+                </li>
+              <li className='nav-item'>
+              <Link
+                to='/'
+                className='nav-links'
+                onClick={closeMobileMenu}
+                >
+                log in 
               </Link>
-            </li>
-          </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+               </li>
+
+            </ul>
+          {button && (
+            <Link to='/create_trip' className='btn-link' onClick={closeMobileMenu}>
+             <Button variant='outline-primary'>Create Trip</Button>
+            </Link>
+)}
+ 
         </div>
       </nav>
     </>
