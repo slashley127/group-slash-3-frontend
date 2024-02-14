@@ -10,6 +10,8 @@ import About_us from './About_us';
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
+import Profile from './Profile';
+import Bottom from './Bottom';
 
 
 const App = () => {
@@ -58,16 +60,19 @@ const App = () => {
     <>
 <Router>
 <Routes>
-     <Route path="/" element={<Login />} />
+     <Route path="/login" element={<Login />} />
      <Route path="/signup" element={<Signup />} />
  </Routes>
       <Navbar />
       <Home />
+      <Bottom/>
       <Routes>
 
         <Route path="/create_trip" element={<Create_Trip />} />
         <Route path="/about" element={<About_us />} />
         <Route path="/all_activites" element={<All_activites />} />
+        <Route path="/profile" element={<home/>} />
+      
         
       </Routes>
     </Router>
