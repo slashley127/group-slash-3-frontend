@@ -1,0 +1,13 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "group-slash-3 Project for LaunchCode's Liftoff Program",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
