@@ -1,6 +1,6 @@
 body {
   /* Set background image */
-  background-image: url('https://wallpaperaccess.com/full/4545911.jpg'); /* Assuming the image is located in the assets folder */
+  background-image: url(""); /* Assuming the image is located in the assets folder */
   /* Adjust background properties */
   background-size: 100%; /* Set background size to 80% of the viewport */
   background-repeat: no-repeat; /* Prevent repeating the background image */
