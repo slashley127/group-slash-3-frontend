@@ -1,22 +1,11 @@
 import React from 'react'
-import imgc  from '../assets/imgc'
-import img5 from'./assets/img5'
+import img5 from "../assets/img(5).jpg"
 import './Bottom.css'
 
 
 
 
 const Data = [
-  {id :1,
-  imgSrc:imgc,
-  name:'Venice Cafe',
-  location: 'St Louis',
-  description: 'Beautiful mosaic dive bar with music every single night and artwork you need to see to believe',
-  cost: 80,
-  rating: 4.6,
-  isIndoor: true
-  }
-  ,
   {id :1,
   imgSrc:img5,
   name: 'St Louis Zoo',
@@ -47,7 +36,8 @@ function Bottom() {
               <div key={id} >
       
                  <div className="imageDiv">
-                 <img src={imgSrc} alt="" />
+                 <img src={imgSrc} alt="..." class="img-thumbnail"/>
+                 
                  </div>
       
                 <div className="cardInfo">
