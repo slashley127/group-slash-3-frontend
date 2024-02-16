@@ -13,15 +13,15 @@ const Home = () => {
 
       <div data-aos="fade-down" className="homeContent container">
         <div className="textDiv">
-        <span  className="smallText">
+        <span  className="smallText ">
           Welcome to our trip planner
         </span>
-        <h1 data-aos="fade-down" className="homeTitle">
-          Search your Holiday
-        </h1>
-        </div>
+        <h3 className="text-center bg-primary text-white my-1 py-3 rounded-lg shadow-lg">
+  Search for Your Perfect Holiday
+</h3>
 
-        <div data-aos="fade-down" className="cardDiv grid">
+        </div>
+        <div  className="card-center bg-secondary text-whaite my-0 py-0 ">
           <div className="destinationInput">
             <label htmlFor="city">Search your destination:</label>
             <div className="input flex">
