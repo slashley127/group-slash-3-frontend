@@ -4,7 +4,7 @@ function Create_Trip() {
   return (
     <div>
 
-     <h1> kkkkk</h1>
+     <h1> </h1>
     </div>
   )
 }
