@@ -1,6 +1,10 @@
 import { Link, useNavigate } from 'react-router-dom'
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import Profile from './Profile'
+=======
+import Home from './Home';
+>>>>>>> react-pages-sofar
 import Login from './Login'
 
 function Signup() {
@@ -94,7 +98,11 @@ function Signup() {
                 />
               </div>
               <div className='d-grid'>
+<<<<<<< HEAD
                <Link to="/Profile" className='btn btn-primary'>Sign Up</Link>
+=======
+               <Link to="/home " className='btn btn-primary'>Sign Up</Link>
+>>>>>>> react-pages-sofar
                 <p className='text-end mt-2'>
                    Already Registered
                   <Link to="/" className="ms-2">Sign in</Link>
@@ -106,6 +114,7 @@ function Signup() {
       );
     }
 
+<<<<<<< HEAD
 export default Signup;
 
 
@@ -199,3 +208,6 @@ export default Signup;
 // }
 //
 // export default Signup
+=======
+export default Signup;
+>>>>>>> react-pages-sofar
