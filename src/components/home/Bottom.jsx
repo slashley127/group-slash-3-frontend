@@ -4,9 +4,9 @@ import { Card } from 'react-bootstrap/esm';
 import { FaSearch } from 'react-icons/fa'; // Importing search icon from react-icons
 
 // Importing images
-import img5 from "../assets/img(5).jpg";
-import img6 from "../assets/img(6).jpg";
-import img7 from "../assets/img(7).jpg";
+import img5 from "../../assets/img(5).jpg";
+import img6 from "../../assets/img(6).jpg";
+import img7 from "../../assets/img(7).jpg";
 
 // Data array
 const Data = [
@@ -61,7 +61,7 @@ function Bottom() {
   return (
     <section>
       <Card>
-        <Card.Body className="text-center bg-secondary text-white my-2 py-2">
+        <Card.Body className="text-center bg-secondary text-white my-2 py-2  fst-italic">
           Most visited destinations
           <div className="search-bar">
             <input

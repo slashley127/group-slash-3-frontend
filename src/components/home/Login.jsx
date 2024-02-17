@@ -1,12 +1,11 @@
-import "./App.css";
+import "../App.css";
 import { Link, useNavigate } from "react-router-dom";
 import React, {useState} from "react";
-<<<<<<< HEAD
-=======
 import Home from "./Home"
-import Navbar from "./Navbar";
-import './Profile'
->>>>>>> react-pages-sofar
+import Navbar from "../navbar/Navbar";
+import '../navbar/Profile'
+
+
 
 
 function Login() {
@@ -64,11 +63,8 @@ const [email, setEmail] = useState("");
             </label>
           </div>
           <div className='d-grid'>
-<<<<<<< HEAD
-            <button className='btn btn-primary' onClick={handleSubmit}> Sign In</button>
-=======
-            <button className='btn btn-primary' onClick={handleSubmit}><Link to="/profile" className='btn btn-primary'>Sign In</Link> </button>
->>>>>>> react-pages-sofar
+
+            <button className='btn btn-primary' onClick={handleSubmit}><Link to="/home" className='btn btn-primary'>Sign In</Link> </button>
             <p className='text-end mt-2'>
               Forgot <a href=""> Password?</a>
               <Link to="/signup" className="ms-2"> Sign Up</Link>

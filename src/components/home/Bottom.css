@@ -117,12 +117,10 @@
                     font-size: 2rem;
                     color: var(--blackColor);
                 }
-            }
+        
 
 
-    
-}
-
+ 
 @media screen and (min-width: 500px){
 
     .title{
