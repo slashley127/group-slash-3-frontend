@@ -68,10 +68,11 @@ const App = () => {
     <AuthProvider>
       <Router>
         <Navbar />
-        <Home/>
-       < Bottom/>
+       
+
 
         <Routes>
+          <Route index element={ <Home/>}/>
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
           <Route path="/all_activites" element={<All_activites/>} />
@@ -79,6 +80,7 @@ const App = () => {
           <Route path="/create_trip" element={<Profile />} />
           <Route path="/about_us" element={<About_us />} />
         </Routes>
+        < Bottom/>
       </Router>
     </AuthProvider>
 
