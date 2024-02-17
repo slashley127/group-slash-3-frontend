@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Bottom.css';
 import { Card } from 'react-bootstrap/esm';
-import { FaSearch } from 'react-icons/fa'; // Importing search icon from react-icons
+
 
 // Importing images
 import img5 from "../../assets/img(5).jpg";
@@ -43,40 +43,18 @@ const Data = [
 ];
 
 function Bottom() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [filteredData, setFilteredData] = useState(Data);
 
-  const handleSearch = (e) => {
-    const query = e.target.value.toLowerCase();
-    setSearchQuery(query);
-    const filtered = Data.filter((destination) => {
-      return (
-        destination.name.toLowerCase().includes(query) ||
-        destination.location.toLowerCase().includes(query)
-      );
-    });
-    setFilteredData(filtered);
-  };
 
   return (
     <section>
       <Card>
         <Card.Body className="text-center bg-secondary text-white my-2 py-2  fst-italic">
           Most visited destinations
-          <div className="search-bar">
-            <input
-              type="text"
-              placeholder="Search..."
-              value={searchQuery}
-              onChange={handleSearch}
-            />
-            <FaSearch className="search-icon" />
-          </div>
         </Card.Body>
       </Card>
 
       <div className="card-group">
-        {filteredData.map((item) => (
+       {Data.map((item) => ( 
           <div className="card" key={item.id}>
             <img className="card-img-top" src={item.imgSrc} alt="Card cap" />
             <div className="card-body">

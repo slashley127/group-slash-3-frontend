@@ -1,9 +1,10 @@
-
 body {
   /* Set background image */
   background-image: url(""); /* Assuming the image is located in the assets folder */
   /* Adjust background properties */
-  background-size: 100%; /* Set background size to 80% of the viewport */
+  background-size: cover; /* Cover the entire viewport */
+  background-repeat: no-repeat; /* Prevent repeating the background image */
+  background-position: center; /* Center the background image */
 }
 
 /* Your existing styles for the form container */
@@ -12,12 +13,10 @@ body {
   max-width: 500px;
   margin: 0 auto;
   padding: 50px;
-
 }
 
 @media screen and (max-width: 1000px) {
   .form-container {
-
     width: 90%;
     padding: 30px;
   }
@@ -25,8 +24,6 @@ body {
 
 @media screen and (max-width: 700px) {
   .form-container {
-
-
     width: 95%;
     padding: 20px;
   }
